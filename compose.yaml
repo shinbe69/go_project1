@@ -1,0 +1,7 @@
+services:
+  API:
+    image: golang:1.22-alpine3.18
+    command: go build .
+    working_dir: /app
+    volumes:
+      - .:/app
